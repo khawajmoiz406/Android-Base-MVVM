@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:backgroundColor="@{position % 2 == 0 ? @color/white : @color/border_silver_light}"
+        app:bottomCorners="@{position == itemCount - 1 ? @dimen/ticket_info_card_corners : @dimen/zero_dp}"
+        tools:background="@color/white">
+
+        <include
+            android:id="@+id/includeName"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:heading="@{@string/name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:value="@{`Exwayezee`}"
+            app:valueColor="@{@color/orange}" />
+
+        <include
+            android:id="@+id/includeQuantity"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/quantity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeName"
+            app:value="@{`1`}"
+            app:valueColor="@{@color/colorAccent}" />
+
+        <include
+            android:id="@+id/includeUnits"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/units}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeQuantity"
+            app:value="@{`Gal`}" />
+
+        <include
+            android:id="@+id/includeCost"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/cost}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeUnits"
+            app:value="@{`$ 20`}" />
+
+        <include
+            android:id="@+id/includeTotal"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/total}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeCost"
+            app:value="@{`$ 20`}" />
+
+        <include
+            android:id="@+id/includeTaxable"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/taxable}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTotal"
+            app:value="@{`Yes`}" />
+
+        <TextView
+            android:id="@+id/tvMaterialHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:gravity="end"
+            android:text="@string/material"
+            app:layout_constraintBottom_toBottomOf="@id/tvMaterialValue"
+            app:layout_constraintEnd_toStartOf="@+id/tvMaterialValue"
+            app:layout_constraintTop_toTopOf="@+id/tvMaterialValue"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tvMaterialValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="0dp"
+            android:gravity="end"
+            android:text="$ 20.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTaxable"
+            app:layout_constraintWidth_percent="0.4"
+            tools:textColor="@color/text_color_grey" />
+
+        <TextView
+            android:id="@+id/tvLabourHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:gravity="end"
+            android:text="@string/labour"
+            app:layout_constraintBottom_toBottomOf="@id/tvLabourValue"
+            app:layout_constraintStart_toStartOf="@+id/tvMaterialHeading"
+            app:layout_constraintTop_toTopOf="@+id/tvLabourValue"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tvLabourValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="0dp"
+            android:gravity="end"
+            android:text="$ 20.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMaterialValue"
+            app:layout_constraintWidth_percent="0.4"
+            tools:textColor="@color/text_color_grey" />
+
+        <TextView
+            android:id="@+id/tvOtherHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:gravity="end"
+            android:text="@string/other"
+            app:layout_constraintBottom_toBottomOf="@id/tvOtherValue"
+            app:layout_constraintStart_toStartOf="@+id/tvLabourHeading"
+            app:layout_constraintTop_toTopOf="@+id/tvOtherValue"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tvOtherValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="0dp"
+            android:gravity="end"
+            android:text="$ 100.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabourValue"
+            app:layout_constraintWidth_percent="0.4"
+            tools:textColor="@color/text_color_grey" />
+
+        <View
+            android:id="@+id/viewTotal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/border_silver"
+            app:layout_constraintEnd_toEndOf="@+id/tvMaterialValue"
+            app:layout_constraintStart_toStartOf="@+id/tvMaterialHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvOtherValue" />
+
+        <TextView
+            android:id="@+id/tvTotalHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:gravity="end"
+            android:text="@string/total"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/tvTotalValue"
+            app:layout_constraintStart_toStartOf="@+id/tvOtherHeading"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalValue"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tvTotalValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="end"
+            android:text="$ 140.00"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTotal"
+            app:layout_constraintWidth_percent="0.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.add_repair.AddRepairFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        tools:background="@color/colorPrimaryDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/llButtons"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                app:backgroundColor="@{@color/white}"
+                app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:topCorners="@{@dimen/ticket_info_card_corners}"
+                tools:background="@drawable/bg_dummy">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cvHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCamera"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:onClick="@{() -> fragment.onCameraClicked()}"
+                        android:src="@drawable/ic_camera"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:visible="@{viewModel.addRepairRequestParams.repairBitmap == null}" />
+
+                    <TextView
+                        android:id="@+id/tvHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:onClick="@{() -> fragment.onCameraClicked()}"
+                        android:text="@string/capture_repair"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_small"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCamera"
+                        app:visible="@{viewModel.addRepairRequestParams.repairBitmap == null}" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_180sdp"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:visible="@{viewModel.addRepairRequestParams.repairBitmap != null}"
+                        tools:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivCapturedImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            app:setImageBitmap="@{viewModel.addRepairRequestParams.repairBitmap}" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etSearchRepair"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableEnd="@drawable/ic_search_white"
+                    android:hint="@string/search_repair_membrane"
+                    android:inputType="textPersonName"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/_20sdp}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cvHeader"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/_20sdp}" />
+
+                <TextView
+                    android:id="@+id/tvManagerNameHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/manager"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                    app:layout_constraintTop_toBottomOf="@id/etSearchRepair" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etManagerName"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableEnd="@drawable/ic_search_white"
+                    android:hint="@string/enter_manager_name"
+                    android:inputType="textPersonName"
+                    android:text="@={viewModel.addRepairRequestParams.managerName}"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/_40sdp}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvManagerNameHeading"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/_40sdp}" />
+
+                <TextView
+                    android:id="@+id/tvQuantityHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/quantity"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                    app:layout_constraintTop_toBottomOf="@id/etManagerName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etQuantityValue"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:hint="@string/quantity"
+                    android:inputType="numberDecimal"
+                    android:text="@={viewModel.addRepairRequestParams.quantity}"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/_40sdp}"
+                    app:layout_constraintEnd_toStartOf="@+id/etQuantityUnit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvQuantityHeading"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/_40sdp}" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etQuantityUnit"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="@string/unit"
+                    android:inputType="text"
+                    android:text="@={viewModel.addRepairRequestParams.unit}"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/_40sdp}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/etQuantityValue"
+                    app:layout_constraintTop_toBottomOf="@id/tvQuantityHeading"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/_40sdp}" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/description"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvDescriptionValue"
+                    app:layout_constraintTop_toBottomOf="@id/etQuantityValue" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tvDescriptionValue"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="@string/enter_description"
+                    android:text="@={viewModel.addRepairRequestParams.description}"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionHeading"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/ticket_info_card_corners}" />
+
+                <TextView
+                    android:id="@+id/tvCorrectionHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/correction"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvCorrectionValue"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionValue" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tvCorrectionValue"
+                    style="@style/UpdateProfileEditTextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="@string/enter_correction"
+                    android:text="@={viewModel.addRepairRequestParams.correction}"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCorrectionHeading"
+                    app:strokeColor="@{@color/border_silver}"
+                    app:strokeWidth="@{@dimen/_1sdp}"
+                    app:topCorners="@{@dimen/ticket_info_card_corners}" />
+
+                <TextView
+                    android:id="@+id/tvWaterProofHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/water_penetrate_heading"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tvCorrectionValue"
+                    app:layout_constraintTop_toBottomOf="@id/tvCorrectionValue" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/st_switch"
+                    android:checked="@={viewModel.addRepairRequestParams.roofPenetrate}"
+                    android:thumb="@null"
+                    android:track="@null"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWaterProofHeading" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:onClick="@{() -> fragment.onBackPress()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/cancel"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:visible="@{viewModel.addRepairRequestParams.repairBitmap == null}"
+                tools:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/TicketInfoButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                android:onClick="@{() -> fragment.onBackPress()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/cancel"
+                android:textColor="@color/border_silver"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnNext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:visible="@{viewModel.addRepairRequestParams.repairBitmap != null}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/TicketInfoButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:drawableEnd="@drawable/ic_on_way"
+                android:onClick="@{() -> fragment.onNextClicked()}"
+                android:paddingStart="@dimen/_18sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text="@string/next"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnCancel"
+                app:visible="@{viewModel.addRepairRequestParams.repairBitmap != null}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

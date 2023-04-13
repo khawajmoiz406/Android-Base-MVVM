@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.centerpoint.connect.models.helper.Drawer" />
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> listeners.onItemClick(position, data)}">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDrawerItem"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/viewLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setImageRes="@{data.icon}"
+            tools:src="@drawable/ic_projects" />
+
+        <TextView
+            android:id="@+id/tvDrawerItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/segoe_ui"
+            android:singleLine="true"
+            android:text="@{data.title}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDrawerItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivDrawerItem"
+            app:layout_constraintTop_toTopOf="@+id/ivDrawerItem"
+            tools:text="Drawer Item" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:visible="@{position != itemCount -1}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

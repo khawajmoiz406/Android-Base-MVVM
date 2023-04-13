@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                           
+                                                                                                      
+
+                 
+                            
+                                                                                                      
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        tools:background="@color/colorPrimaryDark" android:tag="layout/fragment_confirmation_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@id/llButtons"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/capture_signature_msg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:tag="binding_1"              
+                                                                          
+                                                                       
+                    tools:background="@drawable/bg_dummy">
+
+                    <TextView
+                        android:id="@+id/tvManagerNameHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/manager"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etManagerName"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/segoe_ui_semi_bold"
+                        android:hint="@string/enter_manager_name"
+                        android:inputType="textPersonName"
+                        android:tag="binding_2"                                           
+                                                             
+                                                            
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvManagerNameHeading"
+                                                                 
+                                                         
+                                                          />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/etManagerName"
+                        android:tag="binding_3"                                                    
+                                                                                                     />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:tag="binding_4"                                                                                                          
+                app:cornerRadius="@dimen/_40sdp"
+                                                                     
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

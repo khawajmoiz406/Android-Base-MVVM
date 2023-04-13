@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.centerpoint.connect.models.response.repair.Repair" />
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> listeners.onItemClick(position, data)}"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:backgroundColor="@{position % 2 == 0 ? @color/white : @color/border_silver_light}"
+        app:bottomCorners="@{position == itemCount - 1 ? @dimen/ticket_info_card_corners : @dimen/zero_dp}">
+
+        <include
+            android:id="@+id/includeNo"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{`#`}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:value="@{String.valueOf(position + 1)}" />
+
+        <include
+            android:id="@+id/includeRepairs"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/repair}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeNo"
+            app:value="@{data.managerName}"
+            app:valueColor="@{@color/orange}" />
+
+        <include
+            android:id="@+id/includeSection"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/section}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeRepairs"
+            app:value="@{data.quantity}"
+            app:valueColor="@{@color/colorAccent}" />
+
+        <include
+            android:id="@+id/includeProblem"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/problem}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeSection"
+            app:value="@{`Photos (1)`}" />
+
+        <include
+            android:id="@+id/includeResolution"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:heading="@{@string/resolution}"
+            app:hideLine="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeProblem"
+            app:value="@{`Photos (0)`}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

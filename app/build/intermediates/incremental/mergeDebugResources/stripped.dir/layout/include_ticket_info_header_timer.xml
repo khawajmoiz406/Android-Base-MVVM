@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                           
+                                                                                                     
+
+                 
+                            
+                                                                                                      
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/include_ticket_info_header_timer_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_grey"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderIdHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Blue"
+            android:text="@string/order_id"
+            app:layout_constraintEnd_toStartOf="@+id/ivClockButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewTop" />
+
+        <TextView
+            android:id="@+id/tvOrderIdValue"
+            style="@style/TicketInfoValueTextViewStyle"
+            android:text="123456"
+            app:layout_constraintEnd_toStartOf="@+id/ivClockButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderIdHeading" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClockButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:tag="binding_1"                              
+                                                                                                          
+            app:layout_constraintBottom_toTopOf="@+id/viewBottom"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimerValue"
+            app:layout_constraintTop_toBottomOf="@+id/viewTop"
+            tools:src="@drawable/ic_play_clock" />
+
+        <TextView
+            android:id="@+id/tvTimerValue"
+            style="@style/TicketInfoValueTextViewStyle"
+            android:tag="binding_2"              
+            android:textSize="@dimen/text_size_large"
+            app:layout_constraintBottom_toTopOf="@+id/viewBottom"
+            app:layout_constraintEnd_toStartOf="@+id/ivDropDown"
+            app:layout_constraintTop_toBottomOf="@+id/viewTop"
+            tools:text="00:00" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:src="@drawable/ic_drop_down"
+            android:tint="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/viewBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTop" />
+
+        <View
+            android:id="@+id/viewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/card_grey"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderIdValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

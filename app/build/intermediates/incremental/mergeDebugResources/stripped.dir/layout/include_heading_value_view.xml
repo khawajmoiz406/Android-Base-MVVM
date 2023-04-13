@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                          
+                            
+
+                 
+                        
+                            
+
+                 
+                             
+                             
+
+                 
+                           
+                             
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/include_heading_value_view_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/tvDateHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_marginTop="0dp"
+            android:tag="binding_1"  
+            app:layout_constraintBottom_toBottomOf="@id/tvDateValue"
+            app:layout_constraintEnd_toStartOf="@id/tvDateValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvDateValue"
+            app:layout_constraintWidth_percent="@dimen/ticket_info_width_per"
+            tools:text="Heading" />
+
+        <TextView
+            android:id="@+id/tvDateValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:singleLine="false"
+            android:tag="binding_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDateHeading"
+            app:layout_constraintTop_toTopOf="parent"
+                                                                                       
+            tools:text="Value goes here"
+            tools:textColor="@color/text_color_grey" />
+
+        <View
+            android:id="@+id/viewDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/border_silver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDateValue"
+            android:tag="binding_3"                              />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

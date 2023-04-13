@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.repairs.RepairsDetailFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        tools:background="@color/colorPrimaryDark">
+
+        <include
+            layout="@layout/include_repair_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:fragment="@{fragment}"
+            app:layout_constraintBottom_toTopOf="@id/llButtons"
+            app:layout_constraintTop_toTopOf="parent"
+            app:viewModel="@{viewModel}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:visible="@{viewModel.updateRepairRequestParams.resolutionBitmap != null}">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:onClick="@{() -> fragment.onReviewWorkClicked()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/review_completed_work"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

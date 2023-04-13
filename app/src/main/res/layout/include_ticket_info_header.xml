@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="orderId"
+            type="String" />
+
+        <variable
+            name="stage"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_grey"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderIdHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Blue"
+            android:text="@string/order_id"
+            app:layout_constraintEnd_toStartOf="@+id/tvStageHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewTop" />
+
+        <TextView
+            android:id="@+id/tvOrderIdValue"
+            style="@style/TicketInfoValueTextViewStyle"
+            android:text="@{orderId}"
+            app:layout_constraintEnd_toStartOf="@+id/tvStageValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderIdHeading"
+            tools:text="123456" />
+
+        <TextView
+            android:id="@+id/tvStageHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Blue"
+            android:gravity="end"
+            android:text="@string/stage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvOrderIdHeading"
+            app:layout_constraintTop_toBottomOf="@id/viewTop" />
+
+        <TextView
+            android:id="@+id/tvStageValue"
+            style="@style/TicketInfoValueTextViewStyle"
+            android:gravity="end"
+            android:text="@{stage}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvOrderIdValue"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderIdHeading"
+            tools:text="New Service" />
+
+        <View
+            android:id="@+id/viewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/card_grey"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderIdValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

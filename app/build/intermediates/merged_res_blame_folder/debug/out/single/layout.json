@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_global_navigation.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_global_navigation.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_ticket_info_content.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_content.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_check_in.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_check_in.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_update_profile.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_update_profile.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_service_repairs.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_service_repairs.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_popup.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_popup.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_popup_view.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_popup_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_drawer.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_drawer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_review_repair.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_review_repair.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_drop_location.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_drop_location.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_expandable.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_expandable.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_landing.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_landing.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_side_drawer.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_side_drawer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_repairs_tab.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_repairs_tab.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_heading_value_view.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_heading_value_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_review_work.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_review_work.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_services.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_services.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_service_schedule.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_service_schedule.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_projects.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_ticket_info.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_ticket_info.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_number_text.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_number_text.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_start_day.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_start_day.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_repair_detail_content.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_repair_detail_content.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_callback_response.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/dialog_callback_response.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_time_keeping.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_time_keeping.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_ticket_info_header_timer.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_header_timer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_ticket_info_header.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_header.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_heading_expandable.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_heading_expandable.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_bg_landing.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_bg_landing.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_repairs.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_repairs.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_signature.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_signature.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_confirmation.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_confirmation.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_repair.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_add_repair.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_ticket_informatino_card.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_informatino_card.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_location_details.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_location_details.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_repairs.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_repairs.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_selected_view.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_selected_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_estimate_material.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_estimate_material.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_service_info_detail.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_service_info_detail.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/include_toolbar.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_toolbar.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_repair_detail.xml",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_repair_detail.xml"
+    }
+]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                           
+                                                                                                     
+
+                 
+                            
+                                                                                                      
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" android:tag="layout/fragment_service_info_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/includeHeader"
+            layout="@layout/include_ticket_info_header_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/generic_padding_horizontal"
+            android:layout_marginTop="@dimen/generic_padding_top"
+                                      
+            app:layout_constraintTop_toTopOf="parent"
+                                         />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/generic_padding_horizontal"
+            android:layout_marginVertical="@dimen/generic_padding_top"
+            android:orientation="vertical"
+            android:tag="binding_1"          
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentContainer"
+            app:layout_constraintTop_toBottomOf="@+id/includeHeader"
+            app:spanCount="7"
+            tools:itemCount="7"
+            tools:listitem="@layout/item_repairs_tab" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvTabs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

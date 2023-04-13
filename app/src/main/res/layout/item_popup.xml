@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="String" />
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> listeners.onItemClick(position, data)}">
+
+        <TextView
+            android:id="@+id/tvDrawerItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/segoe_ui"
+            android:paddingVertical="@dimen/_13sdp"
+            android:singleLine="true"
+            android:text="@{data}"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Drawer Item" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_silver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:visible="@{position != itemCount -1}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

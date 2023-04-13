@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.confirmation.SignatureFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_20sdp"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_20sdp}"
+            app:layout_constraintBottom_toTopOf="@+id/llButtons"
+            app:layout_constraintTop_toTopOf="parent"
+            app:topCorners="@{@dimen/_20sdp}"
+            tools:background="@drawable/bg_dummy">
+
+            <com.github.gcacace.signaturepad.views.SignaturePad
+                android:id="@+id/sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:penColor="@color/black" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/LoginButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                android:onClick="@{() -> fragment.onCancelClicked()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/cancel"
+                android:textColor="@color/border_silver"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintEnd_toStartOf="@id/btnUpdate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdate"
+                style="@style/LoginButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="@{() -> fragment.onDoneClicked()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/done"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnCancel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

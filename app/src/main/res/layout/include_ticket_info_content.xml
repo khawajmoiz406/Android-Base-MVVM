@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.ticket_info.TicketInfoFragment" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_15sdp"
+            tools:background="@color/colorPrimaryDark">
+
+            <include
+                android:id="@+id/cvInfo"
+                layout="@layout/include_ticket_informatino_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fragment="@{fragment}"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/includeOne"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elTechnicianInstruction"
+                app:layout_constraintTop_toTopOf="@+id/elTechnicianInstruction"
+                app:title="@{`1`}" />
+
+            <View
+                android:id="@+id/viewBottomOne"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/includeTwo"
+                app:layout_constraintStart_toStartOf="@+id/includeOne"
+                app:layout_constraintTop_toBottomOf="@+id/includeOne" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elTechnicianInstruction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expandable="false"
+                app:ev_expanded="true"
+                app:ev_heading="@string/technician_instructions"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_show_drop_down_icon="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeOne"
+                app:layout_constraintTop_toBottomOf="@id/cvInfo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:text="Sed quis neque in dolor dapibus gravida mollis quis erat. In euismod diam sed eros dapibus imperdiet sed et purus dignissim, sollicitudin ex tristique, egestas tellus."
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <include
+                android:id="@+id/includeTwo"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elTKEntries"
+                app:layout_constraintTop_toTopOf="@+id/elTKEntries"
+                app:title="@{`2`}" />
+
+            <View
+                android:id="@+id/viewBottomTwo"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/includeThree"
+                app:layout_constraintStart_toStartOf="@+id/includeTwo"
+                app:layout_constraintTop_toBottomOf="@+id/includeTwo" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elTKEntries"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/time_keeping_entries"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeTwo"
+                app:layout_constraintTop_toBottomOf="@id/elTechnicianInstruction">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTKEntries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    app:adapter="@{fragment.tkAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_time_keeping" />
+
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <include
+                android:id="@+id/includeThree"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elServiceRepairs"
+                app:layout_constraintTop_toTopOf="@+id/elServiceRepairs"
+                app:title="@{`3`}" />
+
+            <View
+                android:id="@+id/viewBottomThree"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/includeFour"
+                app:layout_constraintStart_toStartOf="@+id/includeThree"
+                app:layout_constraintTop_toBottomOf="@+id/includeThree" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elServiceRepairs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/service_repairs"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeThree"
+                app:layout_constraintTop_toBottomOf="@id/elTKEntries">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvServiceRepairs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    app:adapter="@{fragment.srAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_service_repairs" />
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <include
+                android:id="@+id/includeFour"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elEstimateMaterial"
+                app:layout_constraintTop_toTopOf="@+id/elEstimateMaterial"
+                app:title="@{`4`}" />
+
+            <View
+                android:id="@+id/viewBottomFour"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/includeFive"
+                app:layout_constraintStart_toStartOf="@+id/includeFour"
+                app:layout_constraintTop_toBottomOf="@+id/includeFour" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elEstimateMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/estimate_material"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeFour"
+                app:layout_constraintTop_toBottomOf="@id/elServiceRepairs">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEstimateMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    app:adapter="@{fragment.emAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_estimate_material" />
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <View
+                android:id="@+id/viewBottomFive"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/includeSix"
+                app:layout_constraintStart_toStartOf="@+id/includeFive"
+                app:layout_constraintTop_toBottomOf="@+id/includeFive" />
+
+            <include
+                android:id="@+id/includeFive"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elTasksAndMeetings"
+                app:layout_constraintTop_toTopOf="@+id/elTasksAndMeetings"
+                app:title="@{`5`}" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elTasksAndMeetings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/task_and_meetings"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeFive"
+                app:layout_constraintTop_toBottomOf="@id/elEstimateMaterial">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <include
+                        android:id="@+id/includeTask"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/task}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:value="@{`Call`}"
+                        app:valueColor="@{@color/orange}" />
+
+                    <include
+                        android:id="@+id/includeDue"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/due}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeTask"
+                        app:value="@{`10/11/22`}"
+                        app:valueColor="@{@color/colorAccent}" />
+
+                    <include
+                        android:id="@+id/includeTime"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/time}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeDue"
+                        app:value="@{`8:30am EST`}" />
+
+                    <include
+                        android:id="@+id/includeCompleted"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/completed}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeTime"
+                        app:value="@{`11/10/22`}" />
+
+                    <include
+                        android:id="@+id/includeFor"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/for_}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeCompleted"
+                        app:value="@{`Usman`}" />
+
+                    <include
+                        android:id="@+id/includeWith"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/with}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeFor"
+                        app:value="@{`Rizwan`}" />
+
+                    <include
+                        android:id="@+id/includeCompany"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/company}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeWith"
+                        app:value="@{`Tandy Magnetics`}" />
+
+                    <include
+                        android:id="@+id/includeProperty"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/property}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeCompany"
+                        app:value="@{`4470 Hulen Park`}" />
+
+                    <include
+                        android:id="@+id/includeOpportunity"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/opportunity}"
+                        app:hideLine="@{true}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeProperty"
+                        app:value="@{`2094685`}" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <include
+                android:id="@+id/includeSix"
+                layout="@layout/include_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/elHistoryAndNotes"
+                app:layout_constraintTop_toTopOf="@+id/elHistoryAndNotes"
+                app:title="@{`6`}" />
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:id="@+id/elHistoryAndNotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expandable="false"
+                app:ev_expanded="true"
+                app:ev_heading="@string/history_and_notes"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_show_drop_down_icon="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/includeSix"
+                app:layout_constraintTop_toBottomOf="@id/elTasksAndMeetings">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <include
+                        android:id="@+id/includeTitle"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/title}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:value="@{`Need helper for this`}"
+                        app:valueColor="@{@color/orange}" />
+
+                    <include
+                        android:id="@+id/includePreview"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/file}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeTitle"
+                        app:value="@{`Preview`}"
+                        app:valueColor="@{@color/colorAccent}" />
+
+                    <include
+                        android:id="@+id/includeNote"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/note}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includePreview"
+                        app:value="@{`Sed quis neque in dolor dapibus gravida mollis quis erat in euismod`}" />
+
+                    <include
+                        android:id="@+id/includeResource"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/resource}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeNote"
+                        app:value="@{`2094685`}" />
+
+                    <include
+                        android:id="@+id/includeCreatedBy"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/created_by}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeResource"
+                        app:value="@{`UiUx`}" />
+
+                    <include
+                        android:id="@+id/includeDate"
+                        layout="@layout/include_heading_value_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:heading="@{@string/date}"
+                        app:hideLine="@{true}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/includeCreatedBy"
+                        app:value="@{`11/10/22`}" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                             
+
+                 
+                           
+                             
+
+                 
+                            
+                                                                                
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:tag="layout/item_time_keeping_0"                                              
+                                                                                                           
+        tools:background="@color/white"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/includeDate"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+                                         
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+                                     
+                                              />
+
+        <include
+            android:id="@+id/includeEmployee"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                             
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeDate"
+                                               
+                                                   />
+
+        <include
+            android:id="@+id/includeTask"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                         
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeEmployee"
+                                    />
+
+        <include
+            android:id="@+id/includeTimeIn"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTask"
+                                     />
+
+        <include
+            android:id="@+id/includeTimeOut"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                             
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTimeIn"
+                                     />
+
+        <include
+            android:id="@+id/includeHours"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+                                          
+                                  
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTimeOut"
+                               />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                           
+                                                                                   
+
+                 
+                            
+                                                                                       
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        android:paddingTop="@dimen/generic_padding_top" android:tag="layout/fragment_check_in_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/includeTicketHeader"
+            layout="@layout/include_ticket_info_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+                                     
+                                         />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@id/llButtons"
+            app:layout_constraintTop_toBottomOf="@+id/includeTicketHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:tag="binding_1"              
+                                                                          
+                                                                       
+                    tools:background="@drawable/bg_dummy">
+
+                    <TextView
+                        android:id="@+id/tvInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="Sed quis neque in dolor dapibus gravida mollis quis erat. In euismod diam sed eros dapibus imperdiet sed et purus dignissim, sollicitudin ex tristique, egestas tellus."
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_11ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvManagerNameHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/manager"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                        app:layout_constraintTop_toBottomOf="@id/tvInfo" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etManagerName"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/segoe_ui_semi_bold"
+                        android:hint="@string/enter_manager_name"
+                        android:inputType="textPersonName"
+                        android:tag="binding_2"                                      
+                                                             
+                                                            
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvManagerNameHeading"
+                                                                 
+                                                         
+                                                          />
+
+                    <TextView
+                        android:id="@+id/tvNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/notes"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etNotes"
+                        app:layout_constraintTop_toBottomOf="@id/etManagerName" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etNotes"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/segoe_ui_semi_bold"
+                        android:gravity="top"
+                        android:inputType="text"
+                        android:tag="binding_3"                                
+                                                             
+                                                                         
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvNotes"
+                                                                 
+                                                         
+                                                                       />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:tag="binding_4"                               
+                android:paddingTop="@dimen/_11sdp"
+                android:paddingBottom="@dimen/_11sdp"
+                android:text="@string/check_in"
+                app:cornerRadius="@dimen/_40sdp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

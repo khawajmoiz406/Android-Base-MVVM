@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.ticket_info.TicketInfoFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:backgroundColor="@{@color/white}"
+        app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+        app:topCorners="@{@dimen/ticket_info_card_corners}"
+        tools:background="@drawable/bg_dummy">
+
+        <TextView
+            android:id="@+id/tvPropertyHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_marginTop="0dp"
+            android:text="@string/property"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPropertyHeading" />
+
+        <TextView
+            android:id="@+id/tvRegion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:singleLine="true"
+            android:text="Tandy Magnetics"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvPropertyHeading" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:text="Dany's Trix"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegion" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMapAddress"
+            style="@style/UpdateProfileEditTextStyle"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:onClick="@{() -> fragment.gotoLocationDetailFragment()}"
+            android:text="447 Hulen Park Dr Fort Worth, TX 76132"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/text_size_medium"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_40sdp}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress"
+            app:strokeColor="@{@color/border_silver}"
+            app:strokeWidth="@{@dimen/_1sdp}"
+            app:topCorners="@{@dimen/_40sdp}" />
+
+        <TextView
+            android:id="@+id/tvServiceTypeHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:text="@string/service_type"
+            app:layout_constraintEnd_toStartOf="@+id/tvExceedHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMapAddress" />
+
+        <TextView
+            android:id="@+id/tvServiceTypeValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:text="Scope"
+            app:layout_constraintEnd_toStartOf="@+id/tvExceedValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvServiceTypeHeading" />
+
+        <TextView
+            android:id="@+id/tvExceedHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.End"
+            android:text="@string/not_to_exceed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvServiceTypeHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvMapAddress" />
+
+        <TextView
+            android:id="@+id/tvExceedValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.End"
+            android:text="$ 0.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvServiceTypeValue"
+            app:layout_constraintTop_toBottomOf="@id/tvExceedHeading" />
+
+        <TextView
+            android:id="@+id/tvTechnicianHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:text="@string/technician"
+            app:layout_constraintEnd_toStartOf="@+id/tvTruckIdHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvExceedValue" />
+
+        <TextView
+            android:id="@+id/tvTechnicianValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:text="Scope"
+            app:layout_constraintEnd_toStartOf="@+id/tvTruckIdValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTechnicianHeading" />
+
+        <TextView
+            android:id="@+id/tvTruckIdHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.End"
+            android:text="@string/truck_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTechnicianHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvExceedValue" />
+
+        <TextView
+            android:id="@+id/tvTruckIdValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.End"
+            android:text="0024"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTechnicianValue"
+            app:layout_constraintTop_toBottomOf="@id/tvTruckIdHeading" />
+
+        <TextView
+            android:id="@+id/tvEtaHeading"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_marginEnd="0dp"
+            android:text="@string/eta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTruckIdValue" />
+
+        <TextView
+            android:id="@+id/tvEtaValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginEnd="0dp"
+            android:singleLine="false"
+            android:text="3/10/21 9:00 AM - Morning (8 - 10am)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEtaHeading" />
+
+        <TextView
+            android:id="@+id/tvCreatedBy"
+            style="@style/TicketInfoHeadingTextViewStyle.Black.Start"
+            android:layout_marginEnd="0dp"
+            android:text="@string/created_by"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEtaValue" />
+
+        <TextView
+            android:id="@+id/tvCreatedByValue"
+            style="@style/TicketInfoValueTextViewStyle.Blue.Start"
+            android:layout_marginEnd="0dp"
+            android:singleLine="false"
+            android:text="Admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCreatedBy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

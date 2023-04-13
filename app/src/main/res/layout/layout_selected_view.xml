@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="expanded"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        style="@style/LoginEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:drawableEnd="@{expanded ? @drawable/ic_drop_down_open : @drawable/ic_drop_down}"
+        app:backgroundColor="@{@color/white}"
+        app:bottomCorners="@{expanded ? @dimen/zero_dp : @dimen/_20sdp}"
+        app:strokeColor="@{@color/border_silver}"
+        app:strokeWidth="@{@dimen/_1sdp}"
+        app:topCorners="@{@dimen/_20sdp}" />
+
+</layout>

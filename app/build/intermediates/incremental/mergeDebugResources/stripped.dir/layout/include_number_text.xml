@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                        
+                            
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/include_number_text_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/tvNoOne"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:gravity="center"
+            android:tag="binding_1"
+            tools:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+                                                       
+                                                
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+                                             
+            tools:background="@drawable/bg_dummy"
+            tools:backgroundTint="@color/colorAccent" />
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNoOne"
+            app:layout_constraintStart_toEndOf="@+id/tvNoOne"
+            app:layout_constraintTop_toTopOf="@+id/tvNoOne" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/projectsFragment">
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.centerpoint.connect.ui.global.project.ProjectsFragment"
+        android:label="@string/projects"
+        tools:layout="@layout/fragment_projects" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.centerpoint.connect.ui.global.service_schedule.ServicesFragment"
+        android:label="@string/service_schedule"
+        tools:layout="@layout/fragment_service_schedule">
+        <action
+            android:id="@+id/action_servicesFragment_to_ticketInfoFragment"
+            app:destination="@id/ticketInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.centerpoint.connect.ui.global.update_profile.UpdateProfileFragment"
+        android:label="UpdateProfileFragment"
+        tools:layout="@layout/fragment_update_profile" />
+    <fragment
+        android:id="@+id/startDayFragment"
+        android:name="com.centerpoint.connect.ui.global.start_day.StartDayFragment"
+        android:label="StartDayFragment"
+        tools:layout="@layout/fragment_start_day" />
+    <fragment
+        android:id="@+id/ticketInfoFragment"
+        android:name="com.centerpoint.connect.ui.global.ticket_info.TicketInfoFragment"
+        android:label="@string/ticket_info"
+        tools:layout="@layout/fragment_ticket_info" />
+    <fragment
+        android:id="@+id/checkInFragment"
+        android:name="com.centerpoint.connect.ui.global.ticket_info.CheckInFragment"
+        android:label="@string/check_in"
+        tools:layout="@layout/fragment_check_in">
+        <action
+            android:id="@+id/action_checkInFragment_to_serviceInfoDetailFragment"
+            app:destination="@id/serviceInfoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationDetailsFragment"
+        android:name="com.centerpoint.connect.ui.global.ticket_info.LocationDetailsFragment"
+        android:label="LocationDetailsFragment"
+        tools:layout="@layout/fragment_location_details" />
+    <fragment
+        android:id="@+id/serviceInfoDetailFragment"
+        android:name="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailFragment"
+        android:label="ServiceInfoDetailFragment"
+        tools:layout="@layout/fragment_service_info_detail" />
+</navigation>

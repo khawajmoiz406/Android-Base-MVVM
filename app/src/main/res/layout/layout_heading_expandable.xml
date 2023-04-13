@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@drawable/bg_dummy">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            style="@style/UpdateProfileEditTextStyle"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title Goes Here" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:background="@color/border_silver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
+
+        <TextView
+            android:id="@+id/tvHSubHeading"
+            style="@style/UpdateProfileEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/segoe_ui_semi_bold"
+            android:gravity="start"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_medium"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@id/tvHSubDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine"
+            tools:text="Title Goes Here" />
+
+        <TextView
+            android:id="@+id/tvHSubDescription"
+            style="@style/UpdateProfileEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="end"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvHSubHeading"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine"
+            tools:text="Value Goes Here" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

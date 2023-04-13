@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.centerpoint.connect"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:6:5-79
+11-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:7:5-67
+12-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:8:5-65
+13-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:8:22-62
+14
+15    <application
+15-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:10:5-41:19
+16        android:name="com.centerpoint.connect.App"
+16-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:11:9-51
+17        android:allowBackup="true"
+17-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.8.0] /Users/khawajamoiz/.gradle/caches/transforms-3/93eab46bdf36f861aa0323b5d6b8c4ee/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:13:9-43
+21        android:label="@string/app_name"
+21-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:14:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:15:9-54
+23        android:supportsRtl="true"
+23-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:16:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.MVVMArchitecture"
+25-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:17:9-54
+26        android:usesCleartextTraffic="true" >
+26-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:18:9-44
+27        <activity
+27-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:21:9-30:20
+28            android:name="com.centerpoint.connect.ui.splash.SplashActivity"
+28-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:22:13-76
+29            android:exported="true"
+29-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:23:13-36
+30            android:screenOrientation="portrait" >
+30-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:24:13-49
+31            <intent-filter>
+31-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:25:13-29:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:26:17-69
+32-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:26:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:28:17-77
+34-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:28:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:32:9-35:52
+38            android:name="com.centerpoint.connect.ui.landing.LandingActivity"
+38-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:33:13-55
+39            android:exported="true"
+39-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:34:13-36
+40            android:screenOrientation="portrait" />
+40-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:35:13-49
+41        <activity
+41-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:37:9-40:52
+42            android:name="com.centerpoint.connect.ui.global.GlobalNavigationActivity"
+42-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:38:13-63
+43            android:exported="true"
+43-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:39:13-36
+44            android:screenOrientation="portrait" />
+44-->/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/AndroidManifest.xml:40:13-49
+45
+46        <uses-library
+46-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+47            android:name="androidx.window.extensions"
+47-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+48            android:required="false" />
+48-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+49        <uses-library
+49-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+50            android:name="androidx.window.sidecar"
+50-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+51            android:required="false" />
+51-->[androidx.window:window:1.0.0] /Users/khawajamoiz/.gradle/caches/transforms-3/260ed2aa4214edab672dff80ea46d660/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+52
+53        <provider
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/khawajamoiz/.gradle/caches/transforms-3/8fceada527a03f4ee63fc71a17011a7a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/khawajamoiz/.gradle/caches/transforms-3/8fceada527a03f4ee63fc71a17011a7a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+55            android:authorities="com.centerpoint.connect.lifecycle-process"
+55-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/khawajamoiz/.gradle/caches/transforms-3/8fceada527a03f4ee63fc71a17011a7a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+56            android:exported="false"
+56-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/khawajamoiz/.gradle/caches/transforms-3/8fceada527a03f4ee63fc71a17011a7a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+57            android:multiprocess="true" />
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/khawajamoiz/.gradle/caches/transforms-3/8fceada527a03f4ee63fc71a17011a7a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+58    </application>
+59
+60</manifest>

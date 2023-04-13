@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:width="@dimen/_35sdp"
+        android:height="@dimen/_18sdp"
+        android:drawable="@drawable/ic_switch_inactive" />
+</layer-list>

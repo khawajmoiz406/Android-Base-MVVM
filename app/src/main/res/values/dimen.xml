@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">@dimen/_10ssp</dimen>
+    <dimen name="text_size_medium">@dimen/_12ssp</dimen>
+    <dimen name="text_size_large">@dimen/_14ssp</dimen>
+    <dimen name="generic_padding_top">@dimen/_8sdp</dimen>
+    <dimen name="generic_padding_horizontal">@dimen/_10sdp</dimen>
+    <dimen name="generic_padding_high">@dimen/_15sdp</dimen>
+    <dimen name="toolbar_margin">@dimen/_10sdp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="ticket_info_card_corners">@dimen/_18sdp</dimen>
+    <dimen name="generic_padding_horizontal_screens">@dimen/_20sdp</dimen>
+    <dimen name="ticket_info_width_per">0.3</dimen>
+    <dimen name="long_height_corners">@dimen/_15sdp</dimen>
+</resources>

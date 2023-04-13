@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.add_repair.ReviewRepairFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        tools:background="@color/colorPrimaryDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/llButtons"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                app:backgroundColor="@{@color/white}"
+                app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:topCorners="@{@dimen/ticket_info_card_corners}"
+                tools:background="@drawable/bg_dummy">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvImage"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCapturedImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        app:setImageBitmap="@{viewModel.addRepairRequestParams.repairBitmap}" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvNameOfManagerHeading"
+                    style="@style/ReviewRepairTextViewHeadingStyle"
+                    android:text="@string/name_of_manager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cvImage" />
+
+                <TextView
+                    android:id="@+id/tvNameOfManagerValue"
+                    style="@style/ReviewRepairTextViewValueStyle"
+                    android:fontFamily="@font/segoe_ui_semi_bold"
+                    android:text="@{viewModel.addRepairRequestParams.managerName}"
+                    android:textColor="@color/orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNameOfManagerHeading"
+                    tools:text="Name goes here" />
+
+                <TextView
+                    android:id="@+id/tvQuantityHeading"
+                    style="@style/ReviewRepairTextViewHeadingStyle"
+                    android:text="@string/quantity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNameOfManagerValue" />
+
+                <TextView
+                    android:id="@+id/tvQuantityValue"
+                    style="@style/ReviewRepairTextViewValueStyle"
+                    android:fontFamily="@font/segoe_ui_semi_bold"
+                    android:text="@{viewModel.addRepairRequestParams.quantity + ` ` + viewModel.addRepairRequestParams.unit}"
+                    android:textColor="@color/text_color_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvQuantityHeading"
+                    tools:text="5 EA" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionHeading"
+                    style="@style/ReviewRepairTextViewHeadingStyle"
+                    android:text="@string/description"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvQuantityValue" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionValue"
+                    style="@style/ReviewRepairTextViewValueStyle"
+                    android:text="@{viewModel.addRepairRequestParams.description}"
+                    android:textColor="@color/text_color_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescriptionHeading"
+                    tools:text="The flashing or membrane around the curb is failing and needs to be re-flashed." />
+
+                <TextView
+                    android:id="@+id/tvCorrectionHeading"
+                    style="@style/ReviewRepairTextViewHeadingStyle"
+                    android:text="@string/correction"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescriptionValue" />
+
+                <TextView
+                    android:id="@+id/tvCorrectionValue"
+                    style="@style/ReviewRepairTextViewValueStyle"
+                    android:text="@{viewModel.addRepairRequestParams.correction}"
+                    android:textColor="@color/text_color_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCorrectionHeading"
+                    tools:text="Removed existing material and re-installed new curb and flash appropriately per manufacturers specifications." />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:onClick="@{() -> fragment.onSubmitClicked()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/submit"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

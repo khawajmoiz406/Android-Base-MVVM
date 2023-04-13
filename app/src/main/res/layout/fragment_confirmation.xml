@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.confirmation.ConfirmationFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        tools:background="@color/colorPrimaryDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@id/llButtons"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="@string/capture_signature_msg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:backgroundColor="@{@color/white}"
+                    app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                    app:topCorners="@{@dimen/ticket_info_card_corners}"
+                    tools:background="@drawable/bg_dummy">
+
+                    <TextView
+                        android:id="@+id/tvManagerNameHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/manager"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etManagerName"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/segoe_ui_semi_bold"
+                        android:hint="@string/enter_manager_name"
+                        android:inputType="textPersonName"
+                        android:text="@={viewModel.updateRepairRequestParams.managerName}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/_40sdp}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvManagerNameHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/_40sdp}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/etManagerName"
+                        app:setImageBitmap="@{viewModel.updateRepairRequestParams.signatureBitmap}"
+                        app:visible="@{viewModel.updateRepairRequestParams.signatureBitmap != null}" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@{viewModel.updateRepairRequestParams.signatureBitmap == null ? @string/capture_signature : @string/update_ticket}"
+                app:cornerRadius="@dimen/_40sdp"
+                android:onClick="@{() -> fragment.onSubmitClicked()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

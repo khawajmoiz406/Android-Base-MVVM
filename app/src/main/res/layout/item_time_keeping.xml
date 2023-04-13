@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:backgroundColor="@{position % 2 == 0 ? @color/white : @color/border_silver_light}"
+        app:bottomCorners="@{position == itemCount - 1 ? @dimen/ticket_info_card_corners : @dimen/zero_dp}"
+        tools:background="@color/white">
+
+        <include
+            android:id="@+id/includeDate"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:heading="@{@string/date}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:value="@{`10/11/22`}"
+            app:valueColor="@{@color/orange}" />
+
+        <include
+            android:id="@+id/includeEmployee"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/employee}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeDate"
+            app:value="@{`Service Technician`}"
+            app:valueColor="@{@color/colorAccent}" />
+
+        <include
+            android:id="@+id/includeTask"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/task}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeEmployee"
+            app:value="@{`Travel`}" />
+
+        <include
+            android:id="@+id/includeTimeIn"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/time_in}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTask"
+            app:value="@{`11:59am`}" />
+
+        <include
+            android:id="@+id/includeTimeOut"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/time_out}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTimeIn"
+            app:value="@{`08:59pm`}" />
+
+        <include
+            android:id="@+id/includeHours"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:heading="@{@string/hours}"
+            app:hideLine="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTimeOut"
+            app:value="@{`9`}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

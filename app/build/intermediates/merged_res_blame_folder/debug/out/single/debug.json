@@ -1,0 +1,902 @@
+[
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_ticket_info_header.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_header.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_dialog_progress.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_review_repair.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_review_repair.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_projects.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_dialog_callback_response.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/dialog_callback_response.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_start_day.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_start_day.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_activity_splash.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_popup.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_popup.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_bg_dummy.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/bg_dummy.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_repairs_tab.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_repairs_tab.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_ticket_info.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_ticket_info.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_login.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_signature.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_signature.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_service_repairs.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_service_repairs.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_layout_popup_view.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_popup_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/navigation_nav_global.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/navigation/nav_global.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_check_in.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_check_in.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_map_dummy.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_map_dummy.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_add_repair.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_add_repair.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_repairs.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_repairs.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/navigation_nav_landing.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/navigation/nav_landing.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_activity_landing.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_landing.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_ticket_info_content.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_content.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_layout_expandable.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_expandable.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_ic_switch_active_resize.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/ic_switch_active_resize.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_layout_selected_view.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_selected_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_service_schedule.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_service_schedule.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui_bold_italic.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui_bold_italic.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_repair_detail_content.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_repair_detail_content.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_repair_detail.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_repair_detail.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui_light.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui_light.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_confirmation.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_confirmation.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_search_white.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_tick_green.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_tick_green.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_number_text.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_number_text.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_time_keeping.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_time_keeping.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_layout_heading_expandable.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/layout_heading_expandable.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_switch_active.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_switch_active.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_update_profile.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_update_profile.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_heading_value_view.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_heading_value_view.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_drop_location.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_drop_location.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_play_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_play_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui_semi_bold.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui_semi_bold.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_ticket_info_header_timer.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_info_header_timer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_toolbar.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_toolbar.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_ic_check_circle.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_drawer.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_drawer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_app_logo_with_name.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/app_logo_with_name.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui_bold.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui_bold.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_filter.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_filter.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_review_work.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_review_work.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_logout.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_side_drawer.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_side_drawer.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_notification.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_ic_cancel_circle.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/ic_cancel_circle.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_start_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_start_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_switch_inactive.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxhdpi/ic_switch_inactive.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_service_schedule.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_service_schedule.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/font_segoe_ui_italic.ttf.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/font/segoe_ui_italic.ttf"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_estimate_material.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_estimate_material.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_ticket_informatino_card.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_ticket_informatino_card.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_location.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_location.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_on_way.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_on_way.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_item_services.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/item_services.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_service_info_detail.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_service_info_detail.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_app_logo.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/app_logo.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_bg_left_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/bg_left_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-mdpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_ic_switch_inactive_resize.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/ic_switch_inactive_resize.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_projects.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_projects.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/debug/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_camera.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_camera.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_pause_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_pause_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable_st_switch.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable/st_switch.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_back.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_clock.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_clock.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_activity_global_navigation.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/activity_global_navigation.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xhdpi_bg_right_landing.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xhdpi/bg_right_landing.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_drawer.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_crm.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-xxxhdpi/ic_crm.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_drop_down_open.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_drop_down_open.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_drop_down.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-hdpi/ic_drop_down.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_search.png.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/drawable-ldpi/ic_search.png"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_include_bg_landing.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/include_bg_landing.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_location_details.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_location_details.xml"
+    },
+    {
+        "merged": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/build/intermediates/merged_res/debug/layout_fragment_repairs.xml.flat",
+        "source": "/Users/khawajamoiz/Documents/Moiz/Android Projects/CenterPointConnect/app/src/main/res/layout/fragment_repairs.xml"
+    }
+]

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.ticket_info.TicketInfoFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        android:paddingTop="@dimen/generic_padding_top">
+
+        <include
+            android:id="@+id/includeTicketHeader"
+            layout="@layout/include_ticket_info_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:orderId="@{`123454`}"
+            app:stage="@{`New Service`}" />
+
+        <include
+            android:id="@+id/includeTicketInfoContent"
+            layout="@layout/include_ticket_info_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:fragment="@{fragment}"
+            app:layout_constraintBottom_toTopOf="@+id/llButtons"
+            app:layout_constraintTop_toBottomOf="@id/includeTicketHeader" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:drawableEnd="@drawable/ic_on_way"
+                android:text="@string/on_my_way"
+                app:cornerRadius="@dimen/_40sdp"
+                android:onClick="@{() -> fragment.gotoLocationDetailFragment()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/TicketInfoButtonStyle"
+                android:drawableEnd="@drawable/ic_start_clock"
+                android:text="@string/start_the_clock_and_open_ticket"
+                app:cornerRadius="@dimen/_40sdp"
+                android:onClick="@{() -> fragment.gotoCheckInFragment()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

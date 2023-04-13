@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                             
+
+                 
+                           
+                             
+
+                 
+                            
+                                                                                
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:tag="layout/item_service_repairs_0"                                           
+                                                                                                           
+        tools:background="@color/white"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/includeRepairs"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+                                           
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+                                                    
+                                              />
+
+        <include
+            android:id="@+id/includeSection"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeRepairs"
+                                          
+                                                   />
+
+        <include
+            android:id="@+id/includeQuantity"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                             
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeSection"
+                                  />
+
+        <include
+            android:id="@+id/includeProblem"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+                                            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeQuantity"
+                                  />
+
+        <include
+            android:id="@+id/includeResolution"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+                                               
+                                  
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeProblem"
+                                     />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

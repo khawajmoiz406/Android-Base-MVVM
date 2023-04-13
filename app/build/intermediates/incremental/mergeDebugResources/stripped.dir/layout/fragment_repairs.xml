@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                           
+                                                                                            
+
+           
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:background="@color/colorPrimaryDark" android:tag="layout/fragment_repairs_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/generic_padding_horizontal"
+            android:paddingBottom="@dimen/generic_padding_high">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="binding_1"              
+                                                                      
+                app:layout_constraintTop_toTopOf="parent"
+                                                                   
+                tools:background="@drawable/bg_dummy">
+
+                <TextView
+                    android:id="@+id/tvHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/segoe_ui_semi_bold"
+                    android:text="@string/repairs"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:tag="binding_2"          
+                    android:paddingTop="@dimen/_5sdp"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/tvHeading"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_repairs" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSiteBid"
+                style="@style/TicketInfoButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/site_bid"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintEnd_toStartOf="@id/btnAddRepair"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvCard"
+                app:strokeColor="@color/card_grey"
+                app:strokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddRepair"
+                style="@style/TicketInfoButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:tag="binding_3"                                 
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/add_repair"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnSiteBid"
+                app:layout_constraintTop_toBottomOf="@id/cvCard"
+                app:strokeColor="@color/card_grey"
+                app:strokeWidth="@dimen/_1sdp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+         

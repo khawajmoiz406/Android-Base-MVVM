@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.centerpoint.connect.classes.drop_down_spinner.adapter.PopupAdapter" />
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/generic_padding_high"
+        app:adapter="@{adapter}"
+        app:backgroundColor="@{@color/white}"
+        app:bottomCorners="@{@dimen/_20sdp}"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:strokeColor="@{@color/border_silver}"
+        app:strokeWidth="@{@dimen/_1sdp}"
+        tools:listitem="@layout/item_popup" />
+</layout>

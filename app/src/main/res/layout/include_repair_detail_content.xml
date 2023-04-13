@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.centerpoint.connect.constants.ConstantsKt" />
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.service_info.repairs.RepairsDetailFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.service_info.parent.ServiceInfoDetailViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/colorPrimaryDark">
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/repair"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_sub_description="4 EA"
+                app:ev_sub_heading="Curb - Fishing Failure"
+                app:ev_sub_heading_color="@color/orange"
+                app:ev_sub_heading_enabled="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tvManagerNameHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/manager"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/etManagerName"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="@{fragment.repair.managerName}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/_40sdp}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvManagerNameHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/_40sdp}" />
+
+                    <TextView
+                        android:id="@+id/tvQuantityHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/quantity"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/etManagerName"
+                        app:layout_constraintTop_toBottomOf="@id/etManagerName" />
+
+                    <TextView
+                        android:id="@+id/etQuantityValue"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@{fragment.repair.quantity}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/_40sdp}"
+                        app:layout_constraintEnd_toStartOf="@+id/etQuantityUnit"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvQuantityHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/_40sdp}" />
+
+                    <TextView
+                        android:id="@+id/etQuantityUnit"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginEnd="0dp"
+                        android:text="@{fragment.repair.unit}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/_40sdp}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/etQuantityValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvQuantityHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/_40sdp}" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/description"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/tvDescriptionValue"
+                        app:layout_constraintTop_toBottomOf="@id/etQuantityValue" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionValue"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="@{fragment.repair.description}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDescriptionHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/ticket_info_card_corners}" />
+
+                    <TextView
+                        android:id="@+id/tvCorrectionHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/correction"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/tvCorrectionValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvDescriptionValue" />
+
+                    <TextView
+                        android:id="@+id/tvCorrectionValue"
+                        style="@style/UpdateProfileEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="@{fragment.repair.correction}"
+                        app:backgroundColor="@{@color/white}"
+                        app:bottomCorners="@{@dimen/ticket_info_card_corners}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCorrectionHeading"
+                        app:strokeColor="@{@color/border_silver}"
+                        app:strokeWidth="@{@dimen/_1sdp}"
+                        app:topCorners="@{@dimen/ticket_info_card_corners}" />
+
+                    <TextView
+                        android:id="@+id/tvWaterProofHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="@string/water_penetrate_heading"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/_9ssp"
+                        app:layout_constraintStart_toStartOf="@+id/tvCorrectionValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvCorrectionValue" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/st_switch"
+                        android:checked="@{fragment.repair.roofPenetrate}"
+                        android:enabled="false"
+                        android:thumb="@null"
+                        android:track="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvWaterProofHeading" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/location"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_sub_heading="Completed"
+                app:ev_sub_heading_color="@color/text_color_grey"
+                app:ev_sub_heading_enabled="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_map_dummy"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/TicketInfoButtonStyle"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/save"
+                        app:cornerRadius="@dimen/_40sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMap" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/problem_photos"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_sub_description="1 / 4 Photos"
+                app:ev_sub_heading="Completed"
+                app:ev_sub_heading_color="@color/text_color_grey"
+                app:ev_sub_heading_enabled="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivProblem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:loadImage="@{fragment.repair.repairUrl}"
+                        app:setImageBitmap="@{viewModel.updateRepairRequestParams.repairBitmap}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCamera"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:onClick="@{() -> fragment.onCameraClicked(ConstantsKt.PROBLEM_PICTURE)}"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/text_color_grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivProblem" />
+
+                    <TextView
+                        android:id="@+id/tvHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:onClick="@{() -> fragment.onCameraClicked(ConstantsKt.PROBLEM_PICTURE)}"
+                        android:text="@string/take_problem_photos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_small"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCamera" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+            <com.centerpoint.connect.classes.expandable_view.ExpandableView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ev_corner_radius="@dimen/ticket_info_card_corners"
+                app:ev_expanded="false"
+                app:ev_heading="@string/resolution_photos"
+                app:ev_heading_all_caps="true"
+                app:ev_heading_color="@color/colorAccent"
+                app:ev_sub_heading_enabled="true"
+                app:setSubHeading="@{viewModel.updateRepairRequestParams.resolutionBitmap == null ? @string/required_photos : @string/completed}"
+                app:setSubHeadingColor="@{viewModel.updateRepairRequestParams.resolutionBitmap == null ? @color/colorAccent : @color/text_color_grey}"
+                app:setSubHeadingDesc="@{viewModel.updateRepairRequestParams.resolutionBitmap == null ? `0 / 4 Photos` : `1 / 4 Photos`}">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivResolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setImageBitmap="@{viewModel.updateRepairRequestParams.resolutionBitmap}"
+                        app:visible="@{viewModel.updateRepairRequestParams.resolutionBitmap != null}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCameraResolution"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:onClick="@{() -> fragment.onCameraClicked(ConstantsKt.RESOLUTION_PICTURE)}"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/text_color_grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivResolution" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:onClick="@{() -> fragment.onCameraClicked(ConstantsKt.RESOLUTION_PICTURE)}"
+                        android:text="@string/take_resolution_photos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_grey"
+                        android:textSize="@dimen/text_size_small"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCameraResolution" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.centerpoint.connect.classes.expandable_view.ExpandableView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

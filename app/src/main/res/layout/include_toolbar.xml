@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.centerpoint.connect.constants.ConstantsKt" />
+
+        <import type="android.widget.ImageView.ScaleType" />
+
+        <variable
+            name="showBack"
+            type="Boolean" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.ToolbarListeners" />
+
+        <variable
+            name="user"
+            type="com.centerpoint.connect.models.helper.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingHorizontal="@dimen/generic_padding_horizontal"
+        android:paddingTop="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlStart"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:onClick="@{() -> listeners.onStartIconClicked()}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@{showBack == true ? @dimen/_3sdp : @dimen/zero_dp}"
+                android:scaleType="@{showBack == true ? ScaleType.FIT_START : ScaleType.FIT_CENTER}"
+                android:src="@{showBack == true ? @drawable/ic_back : @drawable/ic_drawer}"
+                tools:src="@drawable/ic_drawer" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvAttendanceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="@dimen/_22sdp"
+            android:background="@drawable/bg_dummy"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center"
+            android:onClick="@{() -> listeners.onClockClicked()}"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_28sdp"
+            android:text="@{user.attendance == ConstantsKt.CHECK_OUT ? @string/start_your_day : @string/clock_out}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"
+            app:backgroundColor="@{@color/colorPrimaryDark}"
+            app:bottomCorners="@{@dimen/_20sdp}"
+            app:layout_constraintBottom_toBottomOf="@+id/rlEnd"
+            app:layout_constraintEnd_toStartOf="@+id/rlEnd"
+            app:layout_constraintTop_toTopOf="@+id/rlEnd"
+            app:strokeColor="@{@color/white}"
+            app:strokeWidth="@{@dimen/_1sdp}"
+            app:topCorners="@{@dimen/_20sdp}" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:onClick="@{() -> listeners.onClockClicked()}"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintBottom_toBottomOf="@id/tvAttendanceStatus"
+            app:layout_constraintEnd_toEndOf="@+id/tvAttendanceStatus"
+            app:layout_constraintTop_toTopOf="@id/tvAttendanceStatus" />
+
+        <RelativeLayout
+            android:id="@+id/rlEnd"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:onClick="@{() -> listeners.onEndIconClicked()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notification" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:fontFamily="@font/segoe_ui"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rlStart"
+            tools:text="Screen Title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

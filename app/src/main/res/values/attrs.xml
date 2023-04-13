@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DialogSelectionView">
+        <attr name="selection_hint" format="string" />
+        <attr name="show_selection_hint" format="boolean" />
+        <attr name="auto_select_first" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableView">
+        <attr name="ev_heading" format="string" />
+        <attr name="ev_sub_heading" format="string" />
+        <attr name="ev_sub_description" format="string" />
+        <attr name="ev_heading_all_caps" format="boolean" />
+        <attr name="ev_expanded" format="boolean" />
+        <attr name="ev_expandable" format="boolean" />
+        <attr name="ev_sub_heading_enabled" format="boolean" />
+        <attr name="ev_show_drop_down_icon" format="boolean" />
+        <attr name="ev_corner_radius" format="dimension|reference" />
+        <attr name="ev_background_color" format="color|reference" />
+        <attr name="ev_heading_color" format="color|reference" />
+        <attr name="ev_sub_heading_color" format="color|reference" />
+    </declare-styleable>
+</resources>

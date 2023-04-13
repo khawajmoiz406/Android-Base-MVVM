@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.landing.login.LoginFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.landing.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_bg_landing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toTopOf="@id/tvNameHeading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvNameHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toTopOf="@id/etName"
+            app:layout_constraintStart_toStartOf="@+id/etName"
+            app:layout_constraintTop_toBottomOf="@id/ivAppLogo" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etName"
+            style="@style/LoginEditTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="@string/enter_name_hint"
+            android:inputType="textEmailAddress"
+            android:text="@={viewModel.requestParams.email}"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_40sdp}"
+            app:layout_constraintBottom_toTopOf="@id/tvPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNameHeading"
+            app:topCorners="@{@dimen/_40sdp}" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toTopOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="@id/etPassword"
+            app:layout_constraintTop_toBottomOf="@id/etName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            style="@style/LoginEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="@string/enter_password_hint"
+            android:inputType="textPassword"
+            android:text="@={viewModel.requestParams.password}"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_40sdp}"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+            app:topCorners="@{@dimen/_40sdp}" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/btnLogin"
+            style="@style/LoginButtonStyle"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="@{() -> fragment.verifyFields()}"
+            android:text="@string/login"
+            app:cornerRadius="@dimen/_40sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

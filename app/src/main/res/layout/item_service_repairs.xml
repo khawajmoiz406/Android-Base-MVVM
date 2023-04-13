@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemCount"
+            type="Integer" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="listeners"
+            type="com.centerpoint.connect.base.listeners.BaseAdapterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:backgroundColor="@{position % 2 == 0 ? @color/white : @color/border_silver_light}"
+        app:bottomCorners="@{position == itemCount - 1 ? @dimen/ticket_info_card_corners : @dimen/zero_dp}"
+        tools:background="@color/white">
+
+        <include
+            android:id="@+id/includeRepairs"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:heading="@{@string/repair}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:value="@{`Curb - Flashing Failure`}"
+            app:valueColor="@{@color/orange}" />
+
+        <include
+            android:id="@+id/includeSection"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/section}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeRepairs"
+            app:value="@{`A/C Duct Leak`}"
+            app:valueColor="@{@color/colorAccent}" />
+
+        <include
+            android:id="@+id/includeQuantity"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/quantity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeSection"
+            app:value="@{`4 EA`}" />
+
+        <include
+            android:id="@+id/includeProblem"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:heading="@{@string/problem}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeQuantity"
+            app:value="@{`1 EA`}" />
+
+        <include
+            android:id="@+id/includeResolution"
+            layout="@layout/include_heading_value_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:heading="@{@string/resolution}"
+            app:hideLine="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeProblem"
+            app:value="@{`0 Photo`}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

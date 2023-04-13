@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.centerpoint.connect.ui.global.update_profile.UpdateProfileFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.centerpoint.connect.ui.global.update_profile.UpdateProfileViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_bg_landing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_45sdp}"
+            app:layout_constraintBottom_toTopOf="@+id/tvUserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:topCorners="@{@dimen/_45sdp}"
+            tools:background="@drawable/bg_dummy" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@{fragment.userData.name}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            app:layout_constraintBottom_toTopOf="@+id/cvCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivUser"
+            app:layout_constraintWidth_default="wrap"
+            tools:text="Andrew Jackson" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_20sdp"
+            app:backgroundColor="@{@color/white}"
+            app:bottomCorners="@{@dimen/_20sdp}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+            app:topCorners="@{@dimen/_20sdp}"
+            tools:background="@drawable/bg_dummy">
+
+            <TextView
+                android:id="@+id/tvEmailHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/email"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etEmail"
+                style="@style/UpdateProfileEditTextStyle"
+                android:hint="@string/enter_email_hint"
+                android:inputType="textEmailAddress"
+                android:text="@={viewModel.requestParams.email}"
+                app:backgroundColor="@{@color/white}"
+                app:bottomCorners="@{@dimen/_40sdp}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmailHeading"
+                app:strokeColor="@{@color/border_silver}"
+                app:strokeWidth="@{@dimen/_1sdp}"
+                app:topCorners="@{@dimen/_40sdp}" />
+
+            <TextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/mobile_phone"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/etMobilePhone"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etMobilePhone"
+                style="@style/UpdateProfileEditTextStyle"
+                android:hint="@string/enter_mobile_number_hint"
+                android:inputType="number"
+                android:text="@={viewModel.requestParams.mobilePhone}"
+                app:backgroundColor="@{@color/white}"
+                app:bottomCorners="@{@dimen/_40sdp}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMobileNo"
+                app:strokeColor="@{@color/border_silver}"
+                app:strokeWidth="@{@dimen/_1sdp}"
+                app:topCorners="@{@dimen/_40sdp}" />
+
+            <TextView
+                android:id="@+id/tvOfficeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/office_no"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/etMobilePhone"
+                app:layout_constraintTop_toBottomOf="@+id/etMobilePhone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etOfficeNo"
+                style="@style/UpdateProfileEditTextStyle"
+                android:hint="@string/enter_office_number_hint"
+                android:inputType="number"
+                android:text="@={viewModel.requestParams.officePhone}"
+                app:backgroundColor="@{@color/white}"
+                app:bottomCorners="@{@dimen/_40sdp}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOfficeNo"
+                app:strokeColor="@{@color/border_silver}"
+                app:strokeWidth="@{@dimen/_1sdp}"
+                app:topCorners="@{@dimen/_40sdp}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/LoginButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:onClick="@{() -> fragment.logoutUser()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/logout"
+                android:textColor="@color/border_silver"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintEnd_toStartOf="@id/btnUpdate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etOfficeNo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdate"
+                style="@style/LoginButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="@{() -> fragment.verifyFields()}"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/update"
+                android:textSize="@dimen/_11ssp"
+                app:cornerRadius="@dimen/_40sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnCancel"
+                app:layout_constraintTop_toBottomOf="@id/etOfficeNo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

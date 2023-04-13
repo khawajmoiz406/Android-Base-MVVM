@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/nav_landing.xml","javaFiles":[]},{"navFile":"src/main/res/navigation/nav_global.xml","javaFiles":["com.centerpoint.connect.ui.global.service_schedule.ServicesFragmentDirections","com.centerpoint.connect.ui.global.ticket_info.CheckInFragmentDirections"]}]
